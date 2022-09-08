@@ -7,7 +7,7 @@ export default function Home() {
 		<div className={styles.container}>
 			<Head>
 				<title>Portfolio</title>
-				<meta name="description" content="Ohjelmistokehittäjä Forssasta" />
+				<meta name="description" content="Ohjelmistokehittäjä" />
 			</Head>
 			<h1>Homppeli</h1>
 		</div>
