@@ -1,5 +1,9 @@
 import { createClient } from 'contentful';
+import Link from 'next/link';
 
+import Recipe from '../../components/Recipe';
+
+//yhdistetään contentful ja haetaan reseptit array
 export async function getStaticProps() {
 	const client = createClient({
 		space: process.env.CONTENTFUL_SPACE,
@@ -16,7 +20,7 @@ export async function getStaticProps() {
 }
 
 const Reseptit = ({ reseptit }) => {
-	console.log(reseptit);
+	66;
 	return (
 		<main>
 			<h2>Koodaava kokki-blogi</h2>
@@ -33,10 +37,19 @@ const Reseptit = ({ reseptit }) => {
 			</div>
 			<div className="container">
 				<div>
-					<p>repsut</p>
+					{reseptit.map((resepti) => {
+						return <Recipe key={resepti.sys.id} resepti={resepti} />;
+					})}
 				</div>
 				<div>
-					<p>p repsulista</p>
+					{reseptit.map((resepti) => {
+						const { title, id } = resepti.fields;
+						return (
+							<Link href={'/reseptit/' + id} key={title}>
+								<a>Tutustu reseptiin: {title}</a>
+							</Link>
+						);
+					})}
 				</div>
 			</div>
 		</main>
