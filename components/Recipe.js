@@ -8,7 +8,7 @@ const Recipe = ({ resepti }) => {
 		<article>
 			<h3>{title}</h3>
 			<p>{introduction}</p>
-			<Image src={`https://${rawPicture.fields.file.url}`} width={400} height={400} alt={title} />
+			<Image src={`https:${rawPicture.fields.file.url}`} width={rawPicture.fields.file.details.image.width} height={rawPicture.fields.file.details.image.height} alt={title} />
 			<div>
 				<h3>Ainesosat</h3>
 			{ingredients.map((mauste) => {
@@ -21,7 +21,7 @@ const Recipe = ({ resepti }) => {
 			</div>
 			<p>Valmistusaika: n.{cookingTime}</p>
             {}
-			<Image src={`https://${donePicture.fields.file.url}`} width={400} height={400} alt={title} />
+			<Image src={`https:${donePicture.fields.file.url}`} width={donePicture.fields.file.details.image.width} height={donePicture.fields.file.details.image.height} alt={title} />
 			<div>
 				<h3>Ohjeet</h3>
 				<div>
