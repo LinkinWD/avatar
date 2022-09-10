@@ -50,6 +50,7 @@ const Reseptit = ({ reseptit }) => {
 												src={`https://${donePicture.fields.file.url}`}
 												width={100}
 												height={100}
+												alt={title}
 											/>
 										</a>
 									</Link>
