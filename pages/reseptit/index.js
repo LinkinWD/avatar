@@ -42,8 +42,8 @@ const Reseptit = ({ reseptit }) => {
 						{reseptit.map((resepti) => {
 							const { title, id, donePicture } = resepti.fields;
 							return (
-								<li>
-									<Link href={'/reseptit/' + id} key={id}>
+								<li key={id}>
+									<Link href={'/reseptit/' + id}>
 										<a>
 											Tutustu reseptiin: {title}
 											<Image
