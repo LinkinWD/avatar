@@ -31,7 +31,8 @@ export async function getStaticProps({ params }) {
 	return {
 		props: {
 			resepti: items[0]
-		}
+		},
+		revalidate: 1
 	};
 }
 

@@ -16,7 +16,8 @@ export async function getStaticProps() {
 	return {
 		props: {
 			reseptit: res.items
-		}
+		},
+		revalidate: 1
 	};
 }
 
