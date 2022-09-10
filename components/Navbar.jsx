@@ -1,7 +1,16 @@
-import React from 'react'
+import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <div>Navbar</div>
+    <nav>
+      <ul>
+        <li>
+          <Link href="/"><a >Koti</a></Link>
+        </li>
+        <li>
+          <Link href='/reseptit'><a>Koodaava kokki</a></Link>
+        </li>
+      </ul>
+    </nav>
   )
 }

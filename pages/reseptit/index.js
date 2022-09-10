@@ -1,5 +1,6 @@
 import { createClient } from 'contentful';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Recipe from '../../components/Recipe';
 
@@ -37,19 +38,25 @@ const Reseptit = ({ reseptit }) => {
 			</div>
 			<div className="container">
 				<div>
-					{reseptit.map((resepti) => {
-						return <Recipe key={resepti.sys.id} resepti={resepti} />;
-					})}
-				</div>
-				<div>
-					{reseptit.map((resepti) => {
-						const { title, id } = resepti.fields;
-						return (
-							<Link href={'/reseptit/' + id} key={title}>
-								<a>Tutustu reseptiin: {title}</a>
-							</Link>
-						);
-					})}
+					<ul>
+						{reseptit.map((resepti) => {
+							const { title, id, donePicture } = resepti.fields;
+							return (
+								<li>
+									<Link href={'/reseptit/' + id} key={id}>
+										<a>
+											Tutustu reseptiin: {title}
+											<Image
+												src={`https://${donePicture.fields.file.url}`}
+												width={100}
+												height={100}
+											/>
+										</a>
+									</Link>
+								</li>
+							);
+						})}
+					</ul>
 				</div>
 			</div>
 		</main>

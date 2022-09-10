@@ -11,6 +11,7 @@ export default function Home() {
 			</Head>
 			<h1>Homppeli</h1>
 			<Image src="/img/vuori.jpg" width={500} height={500} />
+			<Image src="/img/kallio.png" width={500} height={500} />
 		</div>
 	);
 }
