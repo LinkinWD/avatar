@@ -1,5 +1,6 @@
 import { createClient } from 'contentful';
 import Recipe from '../../components/Recipe';
+import Loading from '../../components/Loading';
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE,
@@ -19,7 +20,7 @@ export const getStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: false
+		fallback: true
 	};
 };
 
@@ -28,6 +29,15 @@ export async function getStaticProps({ params }) {
 		content_type: 'resepti',
 		'fields.id': params.id
 	});
+
+	if (!items.length) {
+		return {
+			redirect: {
+				destination: '/reseptit',
+				pernament: false
+			}
+		};
+	}
 	return {
 		props: {
 			resepti: items[0]
@@ -37,6 +47,8 @@ export async function getStaticProps({ params }) {
 }
 
 const Reseptit = ({ resepti }) => {
+	if (!resepti) return <Loading />;
+
 	return (
 		<section>
 			<Recipe resepti={resepti} />
