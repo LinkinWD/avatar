@@ -20,21 +20,27 @@ export default function Home() {
 				<title>Portfolio</title>
 				<meta name="description" content="Ohjelmistokehittäjä" />
 			</Head>
-			<div className={styles.container}>
+			<div className={styles.container} style={{ transform: `translateY(${offsetY * 1.1}px)` }}>
 				<div className="header">
 					<h1>Jarmo Lindströn</h1>
 					<h2>Ohjelmistokehittäjä</h2>
 				</div>
 				<div className={styles.background_image}>
-					<Image src="/img/vuori.jpg" width={1500} height={1000} alt="vuorimaisema" />
+					<Image
+						src="/img/vuori.jpg"
+						width={1500}
+						height={1000}
+						alt="vuorimaisema"
+						style={{ transform: `translateY(${offsetY * 0.9}px)` }}
+					/>
 				</div>
-				<div className={styles.front_image} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
+				<div className={styles.front_image}>
 					<Image
 						src="/img/kallio.png"
 						width={1500}
 						height={1000}
 						alt="vuoren kallio"
-						style={{ transform: `translateY(${(offsetY * 0, 5)}px)` }}
+						style={{ transform: `translateY(${offsetY * 0.7}px)` }}
 					/>
 				</div>
 			</div>

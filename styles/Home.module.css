@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   transition: 1s all;
-  height: 200vh;
+ 
 }
 .background_image {
   box-sizing: content-box;
