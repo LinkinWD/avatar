@@ -10,6 +10,9 @@ export default function Navbar() {
         <li>
           <Link href='/reseptit'><a>Koodaava kokki</a></Link>
         </li>
+        <li>
+          <Link href={'/lighthouse'}><a>Lighthouse raportti</a></Link>
+        </li>
       </ul>
     </nav>
   )
