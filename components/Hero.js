@@ -3,13 +3,15 @@ import Image from 'next/image';
 import styles from '../styles/Hero.module.css';
 
 const Header = () => {
+	//asetetaan scrollauksen kuuntelija.
 	const [ offsetY, setOffsetY ] = useState(0);
 
 	const handleScroll = () => setOffsetY(window.pageYOffset);
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
-
+		//estetään muistipaot ja poistetaan tapahtuman kuuntelija, mikäli
+		//poitutaan sivulta
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 	return (
