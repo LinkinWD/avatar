@@ -1,28 +1,33 @@
 import Link from "next/link"
+import styles  from '../styles/Navbar.module.css'
 
 export default function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link href="/"><a >Koti</a></Link>
+    <nav className={styles.nav}>
+      <div className={styles.logo}> logo</div>
+      <div className={styles.nav_links}>
+      <ul className={styles.ul}>
+        <li className={styles.li}>
+          <Link href="/"><a>Koti</a></Link>
         </li>
-        <li>
-          <Link href='/freelancer'>Freelancer</Link>
+        <li className={styles.li}>
+          <Link href='/freelancer'><a>Freelancer</a></Link>
         </li>
-        <li>
+        <li className={styles.li}>
           <Link href={'/lighthouse'}><a>Lighthouse raportti</a></Link>
         </li>
-        <li>
+        <li className={styles.li}>
           <Link href='/reseptit'><a>pula-aika blogi</a></Link>
         </li>
-        <li>
-          <Link href='/verkkokauppa'>Vintage kauppa</Link>
+        <li className={styles.li}>
+          <Link href='/verkkokauppa'><a>Vintage kauppa</a></Link>
         </li>
-        <li>
-          <Link href='/kommentit'>Kommentti seinä</Link>
+        <li className={styles.li}>
+          <Link href='/kommentit'><a>Kommentti seinä</a></Link>
         </li>
       </ul>
+      </div>
+      <div className={styles.hamburger}>Hamburger</div>
     </nav>
   )
 }
