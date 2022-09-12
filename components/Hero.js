@@ -17,7 +17,7 @@ const Header = () => {
 	return (
 		<section className={styles.container}>
 			<div className={styles.background}>
-				<Image src="/img/vuori.png" layout="fill" alt="taustakuva" />
+				<Image src="/img/vuori.png" layout="fill" alt="taustakuva" priority={true} />
 				<div className={styles.kallio}>
 					<Image
 						src="/img/kallio.png"
