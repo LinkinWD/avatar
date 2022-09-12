@@ -15,7 +15,7 @@ const Main = () => {
 				</p>
 				<p>
 					Olen niin sanottu front-end, eli suunnittelen verkkosivujen ulkonäköjä ja teen niin asiakkaani
-					kanssa/ehdoilla ja palveluihini voi tutustua kohdasta 'freelancer' tai sitten siirtymällä sinne
+					kanssa/ehdoilla ja palveluihini voi tutustua kohdasta freelancer tai sitten siirtymällä sinne
 					<span className={styles.span}>
 						<Link href="/freelancer">
 							<a> tästä</a>
