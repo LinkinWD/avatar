@@ -30,6 +30,9 @@ const Header = () => {
 					<h1>Jarmo Lindström</h1>
 					<h3>Ohjelmistokehittäjä</h3>
 				</div>
+				<div className={styles.btn_div}>
+					<button>hei vaan</button>
+				</div>
 			</div>
 		</section>
 	);

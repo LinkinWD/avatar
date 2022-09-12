@@ -4,6 +4,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --line-height:1.3;
+  --main-bg-color: #dfecf4;
+  --main-red: #720612;
+  --second-red: #970a44;
+  --main-blue: #1c4668;
+  
+  --border-radius: 12px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -11,4 +20,8 @@ html {
 body {
   background-color: black;
   color: white;
+  line-height: var(--line-height);
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  background-color: var(--main-bg-color);
+  color: black;
 }
