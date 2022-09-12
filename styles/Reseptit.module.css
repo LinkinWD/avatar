@@ -1,0 +1,25 @@
+.blog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+   
+}
+.text_div {
+    width: 35%;
+}
+.text_div h2 {
+    margin-bottom: 1rem;
+}
+
+.text_div h2,
+.text_div span {
+    color: var(--main-red);
+}
+
+.recipe_div {
+    color: var(--main-red);
+    text-align: center;
+    width: 35%;
+   
+}

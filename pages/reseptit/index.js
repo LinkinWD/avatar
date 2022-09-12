@@ -1,7 +1,7 @@
 import { createClient } from 'contentful';
-
-import Recipe from '../../components/Recipe';
 import RecipeCard from '../../components/RecipeCard';
+
+import styles from '../../styles/Reseptit.module.css';
 
 //yhdistetään contentful ja haetaan reseptit array
 export async function getStaticProps() {
@@ -23,9 +23,9 @@ export async function getStaticProps() {
 const Reseptit = ({ reseptit }) => {
 	66;
 	return (
-		<main>
-			<h2>Koodaava kokki-blogi</h2>
-			<div>
+		<section className={styles.blog}>
+			<div className={styles.text_div}>
+				<h2>Pula-aika blogi</h2>
 				<p>
 					Tervetuloa pula-ajan ruokalaan. Ei nyt suoranaisesti, mutta täällä tehdään pienellä budjetilla
 					erilaisia ruokaratkaisuja ja yritään löytään arjen säästöjä.
@@ -35,22 +35,21 @@ const Reseptit = ({ reseptit }) => {
 					antamaan ideoita ja visioita erilaisiin ruoka kokemuksiin ja pieniin säästöihin, siltä varalta,
 					ettei ole sellaisia vielä itse käyttänyt.
 				</p>
+				<p>
+					Tarkkoja raseptejä on netti pullollaan, täältä etsitään visioita ja innostusta ikuiseen kysymykseen.{' '}
+					<span>Mitä tänään syötäisiin?</span>
+				</p>
 			</div>
-			<div className="container">
-				<div>
-					<ul>
-						{reseptit.map((resepti) => {
-							const { title, id, donePicture } = resepti.fields;
-							return (
-								<li key={id}>
-									<RecipeCard id={id} title={title} donePicture={donePicture} />
-								</li>
-							);
-						})}
-					</ul>
-				</div>
+			<div className={styles.recipe_div}>
+				<h3>Reseptit</h3>
+				<ul>
+					{reseptit.map((resepti) => {
+						const { title, id, donePicture } = resepti.fields;
+						return <RecipeCard id={id} title={title} donePicture={donePicture} key={id} />;
+					})}
+				</ul>
 			</div>
-		</main>
+		</section>
 	);
 };
 

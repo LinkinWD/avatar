@@ -24,7 +24,6 @@
 }
 .header {
   
- 
   z-index: 3;
   position: absolute;
   padding: 2rem;
@@ -38,6 +37,5 @@
 .header h1,
 .header h3 {
   color: transparent;
-  
   
 }   
