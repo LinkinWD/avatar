@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<main>
 			<Head>
-				<title>Portfolio</title>
+				<title>LinkinWD</title>
 				<meta name="description" content="Ohjelmistokehittäjä" />
 				<meta name="author" content="Jarmo Lindströn" />
 				<meta

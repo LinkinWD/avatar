@@ -1,6 +1,7 @@
 import { createClient } from 'contentful';
 import Recipe from '../../components/Recipe';
 import Loading from '../../components/Loading';
+import Head from 'next/head';
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE,
@@ -51,6 +52,15 @@ const Reseptit = ({ resepti }) => {
 
 	return (
 		<section>
+			<Head>
+				<title>{resepti.title}</title>
+				<meta name="description" content="Resepti" />
+				<meta name="author" content="Jarmo Lindströn" />
+				<meta
+					name="keywords"
+					content="ruoka, halpa, pula-aika, resepti, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström"
+				/>
+			</Head>
 			<Recipe resepti={resepti} />
 		</section>
 	);

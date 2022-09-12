@@ -1,6 +1,6 @@
 import { createClient } from 'contentful';
 import RecipeCard from '../../components/RecipeCard';
-
+import Head from 'next/head';
 import styles from '../../styles/Reseptit.module.css';
 
 //yhdistetään contentful ja haetaan reseptit array
@@ -24,6 +24,15 @@ const Reseptit = ({ reseptit }) => {
 	66;
 	return (
 		<section className={styles.blog}>
+			<Head>
+				<title>Blogi</title>
+				<meta name="description" content="Blogi" />
+				<meta name="author" content="Jarmo Lindströn" />
+				<meta
+					name="keywords"
+					content="ruoka, halpa, pula-aika, resepti, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström"
+				/>
+			</Head>
 			<div className={styles.text_div}>
 				<h2>Pula-aika blogi</h2>
 				<p>
