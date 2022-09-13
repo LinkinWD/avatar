@@ -1,10 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
 import styles  from '../styles/Navbar.module.css'
 
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}> logo</div>
+      <div className={styles.logo}> 
+      <Image src="/img/linkin.svg" height={40} width={40} alt='linkinwd logo'/><span> Web Desings</span></div>
       <div className={styles.nav_links}>
       <ul className={styles.ul}>
         <li className={styles.li}>
@@ -27,7 +29,8 @@ export default function Navbar() {
         </li>
       </ul>
       </div>
-      <div className={styles.hamburger}>Hamburger</div>
+      <div className={styles.hamburger}><Image src="/img/hamburger.svg" height={40} width={40} alt='hamburger icon'/>
+      </div>
     </nav>
   )
 }

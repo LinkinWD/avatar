@@ -9,25 +9,21 @@ const Main = () => {
 			<div className={styles.text}>
 				<h3>Jaa mää vain?</h3>
 				<p>
-					Tervetuloa sivuilleni, olen entinen ammattikokki ja nykyään ohjelmisto kehittäjä. Asustelen tällä
-					hetkellä Hattulassa, mutta koska työni on mahdollista tehdä myös etänä, niin sillä ei pitäisi olla
-					niinkään väliä.
-				</p>
-				<p>
-					Olen niin sanottu front-end, eli suunnittelen verkkosivujen ulkonäköjä ja teen niin asiakkaani
-					kanssa/ehdoilla ja palveluihini voi tutustua kohdasta freelancer tai sitten siirtymällä sinne
+					Tervetuloa! Linkin wed desings suunnittelee ja toteuttaa persoonallisia kotisivuja ihmisten
+					erilaisiin tarpeisiin. Jos etsit freelanceria toteuttamaan unelmiesi kotisivut, niin voit tutustua
+					palvelun tarjontaani
 					<span className={styles.span}>
 						<Link href="/freelancer">
-							<a> tästä</a>
+							<a> täältä</a>
 						</Link>
 					</span>
 				</p>
 				<p>
-					Tosin yksinkertaiset back-end ratkaisutkin ovat mahdollisia, kuten esim blogit. Sivuilleni olenkin
-					luonut muutaman tälläisen erilaisen vaihtoehdon. Sieltä löytyy blogi, yhdistetty verkkokauppa ja
-					kommentti seinä.
+					Tosin sivuiltani läytyy muutakin. Entisenä ammattikokkina ajattelin alkaa tekemään pula-aika blogia.
+					Kehittelen siellä ihan kauppa reissuillani jotain kohtalaisen halpaa ruokaa ja annan ideoita
+					ruuanlaittoon.
 				</p>
-				<p>Tervetuloa vielä uudestaan tutustumaan.</p>
+				<p>Testissä on myös pieni Vintage verkkokauppa, jossa myydään muutamia posliini esineitä.</p>
 			</div>
 
 			<div className={styles.picture_box}>

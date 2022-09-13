@@ -23,12 +23,12 @@ const Header = () => {
 						src="/img/kallio.png"
 						layout="fill"
 						alt="kallio"
-						style={{ transform: `translateY(${-offsetY * 0.15}px) `, position: 'absolute' }}
+						style={{ transform: `translateY(${-offsetY * 0.2}px) `, position: 'absolute' }}
 					/>
 				</div>
 				<div className={styles.header} style={{ transform: `translateY(${offsetY * 0.5}px) ` }}>
-					<h1>Jarmo Lindström</h1>
-					<h3>Ohjelmistokehittäjä</h3>
+					<h1>Linkin web desings</h1>
+					<h3>Persoonallisia verkkoratkaisuja</h3>
 				</div>
 				<div className={styles.btn_div}>
 					<button>hei vaan</button>
