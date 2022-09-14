@@ -3,32 +3,37 @@ import Link from 'next/link';
 
 import styles from '../styles/Main.module.css';
 
+import { useGlobalContext } from '../context';
+
 const Main = () => {
+	//scrollRef on globaali, käytetään kahdessa componentissa. CTA ja Main
+	const { scrollRef } = useGlobalContext();
 	return (
-		<section className={styles.section}>
+		<section className={styles.section} ref={scrollRef}>
 			<div className={styles.text}>
-				<h3>Jaa mää vain?</h3>
+				<h3>Sisältö</h3>
 				<p>
-					Tervetuloa! Linkin wed desings suunnittelee ja toteuttaa persoonallisia kotisivuja ihmisten
-					erilaisiin tarpeisiin. Jos etsit freelanceria toteuttamaan unelmiesi kotisivut, niin voit tutustua
-					palvelun tarjontaani
+					Tervetuloa! Linkin wed desingsin kotisivuille. suunnittelen ja toteutan persoonallisia kotisivuja
+					ihmisten erilaisiin tarpeisiin. Jos etsit freelanceria saataisi toteuttaa unelmiesi kotisivut, niin
+					voit tutustua minuun lisää ja palvelun tarjontaani
 					<span className={styles.span}>
 						<Link href="/freelancer">
 							<a> täältä</a>
 						</Link>
 					</span>
 				</p>
+				<br />
 				<p>
 					Tosin sivuiltani läytyy muutakin. Entisenä ammattikokkina ajattelin alkaa tekemään pula-aika blogia.
 					Kehittelen siellä ihan kauppa reissuillani jotain kohtalaisen halpaa ruokaa ja annan ideoita
 					ruuanlaittoon.
 				</p>
+				<br />
 				<p>Testissä on myös pieni Vintage verkkokauppa, jossa myydään muutamia posliini esineitä.</p>
 			</div>
-
 			<div className={styles.picture_box}>
 				<div className={styles.picture}>
-					<Image src="/img/me.png" width={400} height={400} alt="Oma kuva" />
+					<Image src="/img/coding.jpg" width={500} height={500} alt="Oma kuva" />
 				</div>
 			</div>
 		</section>

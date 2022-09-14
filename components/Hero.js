@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Hero.module.css';
+import Cta from './Cta';
 
-const Header = () => {
+import { useGlobalContext } from '../context';
+
+const Header = ({ me }) => {
+	const { id } = useGlobalContext();
 	//asetetaan scrollauksen kuuntelija.
 	const [ offsetY, setOffsetY ] = useState(0);
 
@@ -30,9 +35,8 @@ const Header = () => {
 					<h1>Linkin web desings</h1>
 					<h3>Persoonallisia verkkoratkaisuja</h3>
 				</div>
-				<div className={styles.btn_div}>
-					<button>hei vaan</button>
-				</div>
+
+				<Cta />
 			</div>
 		</section>
 	);
