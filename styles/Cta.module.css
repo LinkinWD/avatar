@@ -1,10 +1,17 @@
+
+
 .btn {
+ 
+    
     z-index: 3;
     font-size: 2.5rem;
-    background-color: var(--main-red);
-    color: white;
+   font-weight: 700;
+    
     padding: 1rem 3rem;
     border-radius: 12px;
     width: 400px;
     cursor: pointer;
+   
+    transition: 0.2 all;
 }
+
