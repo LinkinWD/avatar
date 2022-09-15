@@ -30,7 +30,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: clamp(1.2rem,  5vw, 3rem);
+  font-size: clamp(1.7rem,  4vw, 3rem);
   background-color: #FAD961;
 background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
 text-shadow: 3px 3px black;
@@ -40,4 +40,13 @@ text-shadow: 3px 3px black;
   z-index: 3;
   position: absolute;
 top: 80%;
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    top: 80px;
+    color: white;
+  }
+ 
+  
 }
