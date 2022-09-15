@@ -23,7 +23,7 @@ box-shadow: inset 12px 12px 24px #c4d0d7,
 
     
 }
-
+.text a,
 .text h3, 
 .text span a{
     color: var(--second-red);

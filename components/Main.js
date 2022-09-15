@@ -30,6 +30,10 @@ const Main = () => {
 				</p>
 				<br />
 				<p>Testissä on myös pieni Vintage verkkokauppa, jossa myydään muutamia posliini esineitä.</p>
+				<p>
+					Mikäli taas etsit työntekijää, front-end react junior koodaria, niin tutustu{' '}
+					<a href="https://www.jarmonportfolio.fi/">portfoliooni</a>
+				</p>
 			</div>
 			<div className={styles.picture_box}>
 				<div className={styles.picture}>

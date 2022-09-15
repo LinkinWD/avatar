@@ -1,15 +1,29 @@
 .main {
-    padding: 0 4vw;
+    padding: 0 1rem;
 }
 .header {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1rem 0;
+    
+    
+}
+.header h2,
+.header h4 {
+    
     color: var(--second-red);
+
     border-radius: 12px;
-    padding: 6px 0;
+    padding: 1rem 4rem;
 background: #dfecf4;
 box-shadow:  12px 12px 24px #bec9cf,
              -12px -12px 24px #ffffff;
+}
+
+.text {
+    margin: 1rem 0;
 }
 
 .price_section {
@@ -31,6 +45,32 @@ box-shadow:  12px 12px 24px #bec9cf,
     font-weight: 700;
     
     
+}
+.work_prices{
+    margin: 1rem auto;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 12px;
+background: #dfecf4;
+box-shadow: inset 12px 12px 24px #bec9cf,
+            inset -12px -12px 24px #ffffff;
+}.work_prices hr {
+    border: 2px solid black;
+    margin-bottom: 0.5rem;
+}
+
+.palkka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.palkka:last-child {
+    font-weight: 700;
+    color: var(--main-green)  ;
+}
+
+.page_prices {
+    margin: 1rem 0;
 }
 
 .circle {
@@ -58,4 +98,35 @@ box-shadow:  12px 12px 24px #bec9cf,
      font-size: 2rem;
      font-weight: 900;
 
+}
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+} 
+@media only screen and (min-width: 600px) {
+    .main {
+        margin: 0 3rem;
+    }
+    .work_prices{ 
+        width: 450px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .text {
+        display: flex;
+    }
+    .flex_div {
+        margin: 2rem 1rem;
+    }
+    .page_prices {
+        margin: 0 1rem;
+    }
+
+}
+@media only screen and (min-width: 1400px) {
+    .main {
+        margin: 0 10vw;
+    }
 }
