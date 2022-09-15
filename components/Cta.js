@@ -11,7 +11,7 @@ const Cta = () => {
 	useEffect(() => {
 		const ajastin = setInterval(() => {
 			setCurrentWord(sanat[luku]);
-			console.log(currentWord);
+
 			luku++;
 			if (luku === 5) {
 				luku = 0;

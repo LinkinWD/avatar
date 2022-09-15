@@ -28,4 +28,10 @@ body {
   background-color: var(--main-bg-color);
   color: black;
   font-family: 'Montserrat', sans-serif;
+  transition: var(--main-transition);
+ 
+}
+.main {
+  position: relative;
+  transition: 0.5 all;
 }

@@ -1,0 +1,26 @@
+
+
+.sidebar_area { 
+    padding-top: 2rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-101%);
+    transition: 1s all;
+    top: 7%;
+    height: 70vh;
+    
+ 
+    
+    
+}
+.open {
+    transform: translateX(0);
+}
+
+
