@@ -35,8 +35,9 @@ const Header = ({ me }) => {
 					<h1>Linkin web desings</h1>
 					<h3>Persoonallisia verkkoratkaisuja</h3>
 				</div>
-
-				<Cta />
+				<div className={styles.cta_div}>
+					<Cta />
+				</div>
 			</div>
 		</section>
 	);

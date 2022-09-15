@@ -6,7 +6,7 @@ import { useGlobalContext } from '../context';
 
 const Cta = () => {
 	const sanat = [ 'Scrollaa', 'Alas', 'Tai', 'paina', 'minua' ];
-	const [ currentWord, setCurrentWord ] = useState('');
+	const [ currentWord, setCurrentWord ] = useState('Scrollaa');
 	let luku = 0;
 	useEffect(() => {
 		const ajastin = setInterval(() => {
