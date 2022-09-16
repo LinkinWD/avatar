@@ -16,13 +16,14 @@
     text-decoration: none;
     font-size: 1.22rem;
     color: black;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
    color: var(--second-red);
     border-radius: 6px;
 background: #dfecf4;
 box-shadow:  9px 9px 12px #7b8286,
              -9px -9px 12px #ffffff;
 }
+
 .li a:hover {
     border-radius: 6px;
     border-radius: 6px;
@@ -47,7 +48,10 @@ box-shadow:  9px 9px 12px #7b8286,
     font-weight: 700;
     }
     .li a:hover {
-        transform: scale(1.3);
+        transform: scale(1.1);
    box-shadow: none;   
+    }
+    .li:last-child {
+        margin-bottom: 1rem;
     }
 }

@@ -9,11 +9,13 @@
     z-index: 20;
     background-color: var(--main-bg-color);
     padding: 0 2rem;
+    
 }
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
 
 }
@@ -23,8 +25,20 @@
 }
 .hamburger {
     display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
 }
-
+.btn_div {
+    transition: 2s all ;
+}
+.active {
+    transform: rotate(-90deg);
+}
+.no_active {
+    transform: rotate(0deg);
+}
 @media only screen and (max-width: 1200px) {
     .nav_links {
         display: none;

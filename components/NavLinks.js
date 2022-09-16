@@ -18,7 +18,7 @@ const NavLinks = () => {
 				</Link>
 			</li>
 			<li className={styles.li} onClick={closeSidebar}>
-				<Link href={'/lighthouse'}>
+				<Link href="/lighthouse">
 					<a>Lighthouse raportti</a>
 				</Link>
 			</li>
