@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
 import Main from '../components/Main';
-import Sidebar from '../components/Sidebar';
 
 export default function Home() {
 	return (
@@ -12,7 +11,7 @@ export default function Home() {
 				<meta name="author" content="Jarmo Lindströn" />
 				<meta
 					name="keywords"
-					content="HTML, CSS, JavaScript, nextjs, react, front-end, frontend, ui desing, käyttöliittymä suunnittelu, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström"
+					content="HTML, CSS, JavaScript, nextjs, react, front-end, frontend, ui desing, käyttöliittymä suunnittelu, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström, linkin web designs"
 				/>
 			</Head>
 

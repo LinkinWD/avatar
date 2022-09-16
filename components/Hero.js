@@ -32,7 +32,7 @@ const Header = ({ me }) => {
 					/>
 				</div>
 				<div className={styles.header} style={{ transform: `translateY(${offsetY * 0.5}px) ` }}>
-					<h1>Linkin web desings</h1>
+					<h1>LinkinWD</h1>
 					<h3>Persoonallisia verkkoratkaisuja</h3>
 				</div>
 				<div className={styles.cta_div}>
