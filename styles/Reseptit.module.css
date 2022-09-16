@@ -2,24 +2,55 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 5rem;
    
 }
 .text_div {
-    width: 35%;
+    
+    padding: 1rem;
 }
 .text_div h2 {
     margin-bottom: 1rem;
+    
 }
 
 .text_div h2,
 .text_div span {
     color: var(--main-red);
+    font-weight: 700;
 }
 
 .recipe_div {
-    color: var(--main-red);
+    width: 100%;
     text-align: center;
-    width: 35%;
-   
+   padding: 1rem;
+}
+.recipe_div h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.recipe_area ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .text_div {
+        width: 60%;
+        margin: auto;
+    }
+    .recipe_area {
+        
+        display: flex;
+        justify-content: center;
+    }
+    .recipe_area  ul{
+        width: 60%;
+    }
 }

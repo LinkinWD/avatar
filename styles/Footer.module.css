@@ -1,7 +1,15 @@
 .footer
 {
-    height: 20vh;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 2rem;
+}
+.footer p {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.9;
 }

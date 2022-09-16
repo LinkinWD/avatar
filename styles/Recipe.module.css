@@ -4,7 +4,7 @@
     
 }
 .header {
-    width: 60%;
+    width: 90%;
     margin: auto;
 }
 .header h3 {
@@ -12,22 +12,52 @@
     margin: 2rem 0;
 }
 .ingredients {
-   width: 50%;
+   width: 90%;
     margin: auto;
 }
 .cooking_time {
    
-    width: 50%;
+    width: 90%;
     margin: 2rem auto;
 }
 
 
 .raw_picture, .done_picture {
-    width: 50%;
+    width: 90%;
     margin: 3rem auto;
 
 }
 .method {
-    width: 60%;
+    width: 90%;
     margin: auto;
+}
+@media only screen and (min-width:1200px) {
+    .header {
+        width: 60%;
+        margin: auto;
+    }
+    .header h3 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .ingredients {
+       width: 50%;
+        margin: auto;
+    }
+    .cooking_time {
+       
+        width: 50%;
+        margin: 2rem auto;
+    }
+    
+    
+    .raw_picture, .done_picture {
+        width: 50%;
+        margin: 3rem auto;
+    
+    }
+    .method {
+        width: 60%;
+        margin: auto;
+    }
 }

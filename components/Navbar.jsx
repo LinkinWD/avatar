@@ -12,7 +12,7 @@ export default function Navbar() {
       <Link href='/'>
       <div className={styles.logo}> 
       
-      <Image src="/img/linkin.svg" height={40} width={40} alt='linkinwd logo'/><span> Web Desings</span></div>
+      <Image src="/img/linkinb.svg" height={40} width={40} alt='linkinwd logo'/><span> Web Desings</span></div>
       </Link>
       <div className={styles.nav_links}>
       <NavLinks/>

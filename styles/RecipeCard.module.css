@@ -4,15 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 400px;
     margin-top: 2rem;
     border-radius: 12px;
     border-radius: 12px;
     background: #dfecf4;
     box-shadow:  5px 5px 10px #bec9cf,
                  -5px -5px 10px #ffffff;
-    
-
+                 transform: rotate(-1deg);
+    cursor: pointer;
+    margin: 2rem;
 }
 .recipe_card a{ 
     display: flex;
@@ -23,7 +24,8 @@
     text-decoration: none;
     transition: var(--main-transition);
     font-weight: 700;
-    color: var(--main-blue);
+    color: var(--main-green);
+    font-size: 1.3rem;
 }
 .recipe_card:hover {
     border-radius: 12px;

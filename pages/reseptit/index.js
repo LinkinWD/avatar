@@ -51,12 +51,14 @@ const Reseptit = ({ reseptit }) => {
 			</div>
 			<div className={styles.recipe_div}>
 				<h3>Reseptit</h3>
-				<ul>
-					{reseptit.map((resepti) => {
-						const { title, id, donePicture } = resepti.fields;
-						return <RecipeCard id={id} title={title} donePicture={donePicture} key={id} />;
-					})}
-				</ul>
+				<div className={styles.recipe_area}>
+					<ul>
+						{reseptit.map((resepti) => {
+							const { title, id, donePicture } = resepti.fields;
+							return <RecipeCard id={id} title={title} donePicture={donePicture} key={id} />;
+						})}
+					</ul>
+				</div>
 			</div>
 		</section>
 	);
