@@ -13,20 +13,22 @@ const Main = () => {
 			<div className={styles.text}>
 				<h3>Sisältö</h3>
 				<p>
-					Tervetuloa! Linkin wed desingsin kotisivuille. suunnittelen ja toteutan persoonallisia kotisivuja
-					ihmisten erilaisiin tarpeisiin. Jos etsit freelanceria saataisi toteuttaa unelmiesi kotisivut, niin
-					voit tutustua minuun lisää ja palvelun tarjontaani
+					Tervetuloa! LinkinWd eli Linkin wed desings:in kotisivuille. LinkinWD suunnittee ja toteutaa
+					persoonallisia kotisivuja ihmisten erilaisiin tarpeisiin. Jos etsit freelanceria saataisi toteuttaa
+					unelmiesi kotisivut, niin voit tutustua minuun lisää ja palvelun tarjontaani
 					<span className={styles.span}>
 						<Link href="/freelancer">
 							<a> täältä</a>
 						</Link>
-					</span>
+					</span>{' '}
+					LinkinWD luo verkkosivuja koodaamalla, joten pystyn toteuttamaan sellaista kotisivukone editorit
+					eivät ehkä pysty.
 				</p>
 				<br />
 				<p>
-					Tosin sivuiltani läytyy muutakin. Entisenä ammattikokkina ajattelin alkaa tekemään pula-aika blogia.
-					Kehittelen siellä ihan kauppa reissuillani jotain kohtalaisen halpaa ruokaa ja annan ideoita
-					ruuanlaittoon.
+					Entiseltä ammatiltani olen ammattikokki, mutta Tosin sivuiltani läytyy muutakin. Entisenä
+					ammattikokkina ajattelin alkaa tekemään pula-aika blogia. Kehittelen siellä ihan kauppa reissuillani
+					jotain kohtalaisen halpaa ruokaa ja annan ideoita ruuanlaittoon.
 				</p>
 				<br />
 

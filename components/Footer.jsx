@@ -8,8 +8,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <Image src='/img/linkin.svg' height={80} width={80} alt='linkinwd logo' fill='white' stroke='white'/>
       <p>Jarmo Lindström</p>
+      <p>Linkin Wed Designs</p>
       <p>yaramodesu@gmail.com</p>
-      <p>LinkinWD</p>
+      
     </footer>
   )
 }

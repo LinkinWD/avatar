@@ -1,9 +1,19 @@
 import styles from '../styles/Freelancer.module.css';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const Freelancer = () => {
 	return (
 		<main className={styles.main}>
+			<Head>
+				<title>LinkinWD</title>
+				<meta name="description" content="Linkinwd" />
+				<meta name="author" content="Jarmo Lindströn" />
+				<meta
+					name="keywords"
+					content="HTML, CSS, JavaScript, nextjs, react, front-end, frontend, ui desing, käyttöliittymä suunnittelu, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström, linkin web designs"
+				/>
+			</Head>
 			<section>
 				<div className={styles.header}>
 					<h2>Freelancer</h2>
@@ -12,8 +22,8 @@ const Freelancer = () => {
 					<div className={styles.flex_div}>
 						<h2>Minä, freelancer...</h2>
 						<p>
-							Kansankielellä, teen verkkosivuja ja keskityn niiden ulkonaköön ja siihen mitä ihmiset
-							näkevät, eli minua kutsutaan nimellä front-end kehittäjä
+							Olen front-end kehittäjä, joka tarkoittaa minun keskittyvän verkkosivujen näkytvään osaan
+							pääasiallisesti.
 						</p>
 						<p>
 							Hallitsen myös jonkin verran sitä mitä tapahtuu kulissien takana, mikäli jotain pientä
