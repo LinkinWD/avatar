@@ -2,7 +2,7 @@
 
 .sidebar_area { 
     padding-top: 2rem;
-    background-color: white;
+    background-color: var(--main-bg-color);
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -13,14 +13,24 @@
     transform: translateX(-101%);
     transition: 1s all;
     top: 7%;
-    height: 70vh;
+    height: auto;
     
  
     
     
 }
+.header {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--second-red);
+}
 .open {
     transform: translateX(0);
 }
+ @media only screen and ( min-width: 1200px) {
+    .sidebar_area {
+        display: none;
+    }
+ }
 
 

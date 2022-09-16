@@ -27,11 +27,7 @@ const NavLinks = () => {
 					<a>pula-aika blogi</a>
 				</Link>
 			</li>
-			<li className={styles.li} onClick={closeSidebar}>
-				<Link href="/verkkokauppa">
-					<a>Vintage kauppa</a>
-				</Link>
-			</li>
+
 			<li className={styles.li} onClick={closeSidebar}>
 				<Link href="/kommentit">
 					<a>Kommentti seinä</a>

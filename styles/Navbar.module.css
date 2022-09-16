@@ -8,14 +8,28 @@
     top: 0;
     z-index: 20;
     background-color: var(--main-bg-color);
+    padding: 0 2rem;
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
+}
 .nav_links {
+    display: inline;
+    
+}
+.hamburger {
     display: none;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .nav_links {
-        display: inline;
+        display: none;
+    }
+    .hamburger {
+        display: block;
     }
 }
