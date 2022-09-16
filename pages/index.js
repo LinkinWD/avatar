@@ -8,7 +8,7 @@ export default function Home() {
 		<main className="main">
 			<Head>
 				<title>LinkinWD</title>
-				<meta name="description" content="Ohjelmistokehittäjä" />
+				<meta name="description" content="Linkinwd" />
 				<meta name="author" content="Jarmo Lindströn" />
 				<meta
 					name="keywords"
