@@ -69,7 +69,7 @@ const Freelancer = () => {
 						<p>Back-endin puolella Nodejs toimii serveri kielenä ja MongoDb parhaiten tietokantana</p>
 					</div>
 					<div>
-						<Image src="/img/skills.png" height={400} width={360} alt="Skilli puu" />
+						<Image src="/img/skills.png" height={300} width={360} alt="Skilli puu" />
 					</div>
 				</div>
 				<div className={styles.page_prices}>

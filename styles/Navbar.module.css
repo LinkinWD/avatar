@@ -25,7 +25,7 @@
     
 }
 .hamburger {
-    display: none;
+    
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -45,7 +45,8 @@
     .nav_links {
         display: none;
     }
-    .button_div {
+    
+    .btn_div {
         display: block;
     }
 }

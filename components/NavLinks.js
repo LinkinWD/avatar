@@ -13,6 +13,11 @@ const NavLinks = () => {
 				</Link>
 			</li>
 			<li className={styles.li} onClick={closeSidebar}>
+				<Link href="/mina">
+					<a>Minä</a>
+				</Link>
+			</li>
+			<li className={styles.li} onClick={closeSidebar}>
 				<Link href="/freelancer">
 					<a>Freelancer</a>
 				</Link>
