@@ -20,8 +20,8 @@ const Mina = () => {
 						haavettani kohde.
 					</p>
 					<p>
-						Oli helppoa opiskella, kun tiesi vastauksen kysymykseen "Mitä sinusta tulee isona?", jo mennessä
-						kouluun ja pystyi keskittymään siihen mikä merkitsee.
+						Oli helppoa opiskella, kun tiesi vastauksen kysymykseen &quot;Mitä sinusta tulee isona?&quot;,
+						jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee.
 					</p>
 				</article>
 				<div className={styles.picture_container}>
