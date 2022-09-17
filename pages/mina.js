@@ -20,7 +20,7 @@ const Mina = () => {
 						haavettani kohde.
 					</p>
 					<p>
-						Oli helppoa opiskella, kun tiesi vastauksen kysymykseen 'Mitä sinusta tulee isona?', jo mennessä
+						Oli helppoa opiskella, kun tiesi vastauksen kysymykseen "Mitä sinusta tulee isona?", jo mennessä
 						kouluun ja pystyi keskittymään siihen mikä merkitsee.
 					</p>
 				</article>
