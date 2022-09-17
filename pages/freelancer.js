@@ -27,18 +27,19 @@ const Freelancer = () => {
 						</p>
 						<p>
 							Hallitsen myös jonkin verran sitä mitä tapahtuu kulissien takana, mikäli jotain pientä
-							blogia tai itsetäytettävää osiota tarvitaa sivuille. Myöskin kuvanmuokkaus järjestyy.
+							blogia tai itse täytettävää osiota tarvitaa sivuille. Myöskin kuvanmuokkaus järjestyy.
 						</p>
 						<p>
 							Tarkoituksena on tehdä sivuja, joita ei tarvitse ylläpitää ja niistä ei tule muita
 							lisäkustannuksia minun puoeltani, jollei niitä sitten tilata myöhemmin.
 						</p>
 					</div>
+
 					<div className={styles.flex_div}>
 						<h3>Työn hinta</h3>
 						<p>
 							Aloittelevana ja työtäetsivänä en paljoakaan vielä veloita, mutta hinnat tulevat nousemaan
-							tulevaisuudessa.
+							tulevaisuudessa. Työskentelen joko tunti veloituksella tai sopimuksen mukaan.
 						</p>
 						<div className={styles.work_prices}>
 							<div className={styles.palkka}>
@@ -57,6 +58,20 @@ const Freelancer = () => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.skill_div}>
+					<div>
+						<h3>Käytetyt tekniikat</h3>
+						<p>
+							Front-end puolella perus substanttiivina toimii HTML, sitä kuvaavana adjektiivina toimii
+							perus CSS tai sitten SCSS tarvittaessa. Tekoa kuuvavina verbeinä käytän javascriptiä, sen
+							pääkirjastona Reactia ja viitekehyksenä NextJs
+						</p>
+						<p>Back-endin puolella Nodejs toimii serveri kielenä ja MongoDb parhaiten tietokantana</p>
+					</div>
+					<div>
+						<Image src="/img/skills.png" height={400} width={360} alt="Skilli puu" />
+					</div>
+				</div>
 				<div className={styles.page_prices}>
 					<h3>Kuukausi hinnat</h3>
 					<p>
@@ -67,6 +82,7 @@ const Freelancer = () => {
 						Github pages sopisi pienille organisaatioille ja yksityishenkilöille. Netlify ja Vercel olisivat
 						sitten kaupallisiin tarkoituksiin ja niillä kummallakin on omat vahvuutensa. Riippuen tarpeesta.
 					</p>
+
 					<div className={styles.price_section}>
 						<div className={styles.price}>
 							<h4>Github</h4>

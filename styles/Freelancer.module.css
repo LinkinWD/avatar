@@ -21,11 +21,34 @@ background: #dfecf4;
 box-shadow:  12px 12px 24px #bec9cf,
              -12px -12px 24px #ffffff;
 }
+.header h2 {
+    width: 100%;
+    text-align: center;
+}
 
 .text {
     margin: 1rem 0;
 }
+/* skill div */
+.skill_div {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.skill_div div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+.skill_div h3 {
+    margin-bottom: 1rem;
+}
 
+
+/* price section */
 .price_section {
     display: flex;
     justify-content: center;
@@ -107,13 +130,19 @@ box-shadow: inset 12px 12px 24px #bec9cf,
 } 
 @media only screen and (min-width: 600px) {
     .main {
-        margin: 0 3rem;
+        padding: 0 3rem;
     }
     .work_prices{ 
         width: 450px;
     }
+    .header h2 {
+        width: 500px;
+    }
 }
 @media only screen and (min-width: 1100px) {
+    .main {
+        padding: 0 10vw;
+    }
     .text {
         display: flex;
     }
@@ -121,9 +150,23 @@ box-shadow: inset 12px 12px 24px #bec9cf,
         margin: 2rem 1rem;
     }
     .page_prices {
-        margin: 0 1rem;
+        margin: 1rem 1rem;
     }
-
+    .header h2 {
+        width: 800px;
+    }
+    .header h4 {
+        width: 600px;
+        text-align: center;
+    }
+    .skill_div div {
+        width: 40%;
+        margin: 0 1rem;
+        align-items: center;
+       
+    }
+    .skill_div div:last-child {
+        margin-left: auto;}
 }
 @media only screen and (min-width: 1400px) {
     .main {
