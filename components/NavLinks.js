@@ -17,14 +17,10 @@ const NavLinks = () => {
 					<a>Minä</a>
 				</Link>
 			</li>
+
 			<li className={styles.li} onClick={closeSidebar}>
 				<Link href="/freelancer">
 					<a>Freelancer</a>
-				</Link>
-			</li>
-			<li className={styles.li} onClick={closeSidebar}>
-				<Link href="/lighthouse">
-					<a>Lighthouse raportti</a>
 				</Link>
 			</li>
 			<li className={styles.li} onClick={closeSidebar}>
@@ -34,8 +30,8 @@ const NavLinks = () => {
 			</li>
 
 			<li className={styles.li} onClick={closeSidebar}>
-				<Link href="/kommentit">
-					<a>Kommentti seinä</a>
+				<Link href="/yhteytta">
+					<a>Ota yhteyttä</a>
 				</Link>
 			</li>
 		</ul>

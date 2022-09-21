@@ -1,14 +1,13 @@
-import { useState } from 'react';
 import Image from 'next/image';
 
 import styles from '../styles/Mina.module.css';
+import Button from '../components/Button';
+
+import { useGlobalContext } from '../context';
 
 const Mina = () => {
-	const [ turning, setTurning ] = useState(false);
+	const { turning, side } = useGlobalContext();
 
-	const side = () => {
-		setTurning(!turning);
-	};
 	return (
 		<section className={styles.section}>
 			<header className={styles.header}>
@@ -33,14 +32,14 @@ const Mina = () => {
 							aikuisen verran ja ajattelin, vaihtaa fyysisesti kevyempään ammattiin ja seurata toista
 							nuoruuden haavettani kohde.
 						</p>
-						<button onClick={side}>käännä</button>
+						<Button text={'käännä'} funct={'side'} />
 					</div>
 					<div className={styles.back_text}>
 						<p>
 							Oli helppoa opiskella, kun tiesi vastauksen kysymykseen &quot;Mitä sinusta tulee
 							isona?&quot;, jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee.
 						</p>
-						<button onClick={side}>käännä</button>
+						<Button text={'käännä'} funct={'side'} />
 					</div>
 				</article>
 			</div>

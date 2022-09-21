@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import styles from '../styles/Recipe.module.css';
+import Button from './Button';
 
 const Recipe = ({ resepti }) => {
 	const { title, introduction, rawPicture, ingredients, cookingTime, method, donePicture } = resepti.fields;
@@ -31,7 +33,7 @@ const Recipe = ({ resepti }) => {
 				})}
 			</div>
 			<div className={styles.cooking_time}>
-				<p>Valmistusaika: n.{cookingTime} minuuttia.</p>
+				<p>Kypsennys aika: n.{cookingTime} minuuttia.</p>
 			</div>
 			<div className={styles.done_picture}>
 				<Image
@@ -45,6 +47,11 @@ const Recipe = ({ resepti }) => {
 				<h3>Ohjeet</h3>
 				<div>{documentToReactComponents(method)}</div>
 			</div>
+			<Link href="/reseptit">
+				<a>
+					<Button text={'Palaa valikkoon'} funct={'none'} />
+				</a>
+			</Link>
 		</article>
 	);
 };
