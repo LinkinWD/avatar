@@ -5,6 +5,10 @@ import styles from '../styles/Mina.module.css';
 
 const Mina = () => {
 	const [ turning, setTurning ] = useState(false);
+
+	const side = () => {
+		setTurning(!turning);
+	};
 	return (
 		<section className={styles.section}>
 			<header className={styles.header}>
@@ -19,8 +23,8 @@ const Mina = () => {
 						<Image src="/img/piirrossilppu.png" width={300} height={300} alt="Piirros minusta" />
 					</picture>
 				</div>
-				<article className={styles.article}>
-					<div className={`${styles.front_text} `}>
+				<article className={`${styles.article} ${turning ? styles.turn : ''}`}>
+					<div className={styles.front_text}>
 						<p>
 							Jo kypsään ikään kasvanut miehen kloppi: Mies joka nuorena haaveili joko olevansa kokki tai
 							ohjelmoija. Vanhemmilla oli toiset suunnitelmat, joten nuoruus tuli eletyä ja vanhemmiten
@@ -29,18 +33,14 @@ const Mina = () => {
 							aikuisen verran ja ajattelin, vaihtaa fyysisesti kevyempään ammattiin ja seurata toista
 							nuoruuden haavettani kohde.
 						</p>
-						<button className={styles.btn} onClick={() => setTurning(!turning)}>
-							Käännä
-						</button>
+						<button onClick={side}>käännä</button>
 					</div>
-					<div className={`${styles.back_text} `}>
+					<div className={styles.back_text}>
 						<p>
 							Oli helppoa opiskella, kun tiesi vastauksen kysymykseen &quot;Mitä sinusta tulee
 							isona?&quot;, jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee.
 						</p>
-						<button onClick={() => setTurning(!turning)} className={styles.btn}>
-							Käännä
-						</button>
+						<button onClick={side}>käännä</button>
 					</div>
 				</article>
 			</div>
