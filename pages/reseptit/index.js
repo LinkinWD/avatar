@@ -1,6 +1,7 @@
 import { createClient } from 'contentful';
 import RecipeCard from '../../components/RecipeCard';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../../styles/Reseptit.module.css';
 
 //yhdistetään contentful ja haetaan reseptit array
@@ -33,22 +34,27 @@ const Reseptit = ({ reseptit }) => {
 					content="ruoka, halpa, pula-aika, resepti, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström"
 				/>
 			</Head>
-			<div className={styles.text_div}>
-				<h2>Pula-aika blogi</h2>
-				<p>
-					Tervetuloa pula-ajan ruokalaan. Ei nyt suoranaisesti, mutta täällä tehdään pienellä budjetilla
-					erilaisia ruokaratkaisuja ja yritään löytään arjen säästöjä.
-				</p>
-				<p>
-					Kaikki reseptit ovet suuntaa antavia ja niitä ei olekkaan tehty orjallisesti noudatettavaksi, vaan
-					antamaan ideoita ja visioita erilaisiin ruoka kokemuksiin ja pieniin säästöihin, siltä varalta,
-					ettei ole sellaisia vielä itse käyttänyt.
-				</p>
-				<p>
-					Tarkkoja raseptejä on netti pullollaan, täältä etsitään visioita ja innostusta ikuiseen kysymykseen.{' '}
-					<span>Mitä tänään syötäisiin?</span>
-				</p>
-			</div>
+			<h2 className={styles.header}>Pula-aika blogi</h2>
+			<article className={styles.article}>
+				<div className={styles.text_div}>
+					<p>
+						Tervetuloa pula-ajan ruokalaan. Ei nyt suoranaisesti, mutta täällä tehdään pienellä budjetilla
+						erilaisia ruokaratkaisuja ja yritään löytään arjen säästöjä.
+					</p>
+					<p>
+						Kaikki reseptit ovet suuntaa antavia ja niitä ei olekkaan tehty orjallisesti noudatettavaksi,
+						vaan antamaan ideoita ja visioita erilaisiin ruoka kokemuksiin ja pieniin säästöihin, siltä
+						varalta, ettei ole sellaisia vielä itse käyttänyt.
+					</p>
+					<p>
+						Tarkkoja raseptejä on netti pullollaan, täältä etsitään visioita ja innostusta ikuiseen
+						kysymykseen. <span>Mitä tänään syötäisiin?</span>
+					</p>
+				</div>
+				<div className={styles.image_div}>
+					<Image src="/img/ruokakori.jpg" height={500} width={500} alt="Ruokakori" />
+				</div>
+			</article>
 			<div className={styles.recipe_div}>
 				<h3>Reseptit</h3>
 				<div className={styles.recipe_area}>
