@@ -13,6 +13,7 @@ export default function Home() {
 					name="keywords"
 					content="HTML, CSS, JavaScript, nextjs, react, front-end, frontend, ui desing, käyttöliittymä suunnittelu, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström, linkin web designs"
 				/>
+				<meta name="google-site-verification" content="0kzEqL01zbUw9SOW54p-g9mKZRqhj9msmTUk_96y-x4" />
 			</Head>
 
 			<Hero />
