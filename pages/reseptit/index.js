@@ -26,7 +26,7 @@ const Reseptit = ({ reseptit }) => {
 		<section className={styles.blog}>
 			<Head>
 				<title>Blogi</title>
-				<meta name="description" content="Blogi" />
+				<meta name="description" content="Pula-aika blogi. ruokaideoita ja toteutusta halvalla" />
 				<meta name="author" content="Jarmo Lindströn" />
 				<meta
 					name="keywords"
