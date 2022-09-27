@@ -1,6 +1,7 @@
 import styles from '../styles/Freelancer.module.css';
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Freelancer = () => {
 	return (
@@ -114,7 +115,11 @@ const Freelancer = () => {
 					<h4>Ja muista tarvittaessa</h4>
 				</div>
 				<div className={styles.image}>
-					<Image src="/img/mobile.png" height={400} width={300} alt="tyttö kännykässä" />
+					<Link href="/yhteytta">
+						<a>
+							<Image src="/img/mobile.png" height={400} width={300} alt="tyttö kännykässä" />
+						</a>
+					</Link>
 				</div>
 			</section>
 		</main>
