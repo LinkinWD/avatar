@@ -1,0 +1,13 @@
+{
+    "forms": {
+      "contact": {
+        "name": "contact me",
+        "actions": [{ "type": "email", "to": "yaramodesu@gmail.com" }],
+        "fields": {
+          "email": {
+            "required": true
+          }
+        }
+      }
+    }
+  }
