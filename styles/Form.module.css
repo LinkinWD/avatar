@@ -1,0 +1,47 @@
+.form {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.form label {
+    color: var(--second-red);
+}
+.form input,
+.form textarea {
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 90%;
+}
+
+
+.form input {
+   
+    border-style: solid black;
+    border-width: 0 0 2px 0;
+    background-color: transparent;
+}
+.form textarea {
+    background-color: transparent;
+    border: 2px solid black;
+    height: 7rem;
+    margin-bottom: 1rem;
+    
+}
+
+.btn {
+    background-color: var(--main-green);
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+

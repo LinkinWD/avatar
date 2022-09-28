@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email h3 {
+    margin-bottom: 1rem;
+}
+
+.qr {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .section {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 70vh;
+    }
+    .qr {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 400px;
+        font-weight: 700;
+        color: var(--second-red);
+    }
+}
