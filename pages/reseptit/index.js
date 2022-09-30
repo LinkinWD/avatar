@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { createClient } from 'contentful';
 import RecipeCard from '../../components/RecipeCard';
 import Head from 'next/head';
@@ -22,7 +23,9 @@ export async function getStaticProps() {
 }
 
 const Reseptit = ({ reseptit }) => {
-	66;
+	const [ inputValue, setInputValue ] = useState();
+	const [ message, setMessage ] = useState(false);
+
 	return (
 		<section className={styles.blog}>
 			<Head>
@@ -55,6 +58,32 @@ const Reseptit = ({ reseptit }) => {
 					<Image src="/img/ruokakori.jpg" height={500} width={500} alt="Ruokakori" />
 				</div>
 			</article>
+			<section>
+				<p>
+					Uusia reseptejä tulee noin kaksi kuukaudessa. Mikäli haluat ilmoituksen, kun uusi saapuu, jätä
+					sähköposti osoitteesi
+				</p>
+				{!message && (
+					<form>
+						<p>
+							<label htmlFor="email">Sähköpostiosoite:</label>
+							<input
+								type="email"
+								required
+								name="email"
+								id="email"
+								onChange={(e) => setInputValue(e.target.value)}
+							/>
+						</p>
+
+						<button type="submit" onClick={() => setMessage(true)}>
+							lähetä
+						</button>
+					</form>
+				)}
+				{message && <p>Kiitos tilauksesta.</p>}
+			</section>
+
 			<div className={styles.recipe_div}>
 				<h3>Reseptit</h3>
 				<div className={styles.recipe_area}>

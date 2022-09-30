@@ -37,7 +37,9 @@ const Mina = () => {
 					<div className={styles.back_text}>
 						<p>
 							Oli helppoa opiskella, kun tiesi vastauksen kysymykseen &quot;Mitä sinusta tulee
-							isona?&quot;, jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee.
+							isona?&quot;, jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee. Suuntais oli
+							Front-end kehittäjä ja siihen liittyvät sivu hommelit. Koodaus, suunnittelu,
+							kuvamanipulaatiot. Siitä sitten suunnataan full-stack kehittäjäksi tulevaisuudessa.
 						</p>
 						<Button text={'käännä'} funct={'side'} />
 					</div>
