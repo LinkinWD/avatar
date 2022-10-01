@@ -13,28 +13,28 @@ const Main = () => {
 			<div className={styles.text}>
 				<h3>Sisältö</h3>
 				<p>
-					Tervetuloa! LinkinWd eli Linkin wed desings:in kotisivuille. LinkinWD suunnittee ja toteutaa
-					persoonallisia kotisivuja ihmisten erilaisiin tarpeisiin. Jos etsit freelanceria saataisi toteuttaa
-					unelmiesi kotisivut, niin voit tutustua minuun lisää ja palvelun tarjontaani
+					Tervetuloa Linkin wed desings:in kotisivuille. LinkinWD suunnittee ja toteutaa persoonallisia
+					kotisivuja ihmisten erilaisiin tarpeisiin. Jos etsit freelanceria saataisi toteuttaa unelmiesi
+					kotisivut, niin voit tutustua minuun lisää ja palvelun tarjontaani
 					<span className={styles.span}>
 						<Link href="/freelancer">
-							<a> täältä</a>
+							<a> täältä. </a>
 						</Link>
-					</span>{' '}
+					</span>
 					LinkinWD luo verkkosivuja koodaamalla, joten pystyn toteuttamaan sellaista kotisivukone editorit
-					eivät ehkä pysty.
+					eivät ehkä pysty. Osaan kyllä käyttää niitäkin.
 				</p>
 				<br />
 				<p>
-					Entiseltä ammatiltani olen ammattikokki, mutta Tosin sivuiltani läytyy muutakin. Entisenä
-					ammattikokkina ajattelin alkaa tekemään pula-aika blogia. Kehittelen siellä ihan kauppa reissuillani
-					jotain kohtalaisen halpaa ruokaa ja annan ideoita ruuanlaittoon.
+					Entiseltä ammatiltani olen ammattikokki, joten sivuiltani löytyy muutakin. Entisenä kokkina
+					ajattelin alkaa tekemään pula-aika blogia. Kehittelen siellä ihan jotain kohtalaisen halpaa ruokaa
+					ja annan ideoita ruuanlaittoon.
 				</p>
 				<br />
 
 				<p>
-					Mikäli taas etsit työntekijää, front-end react junior koodaria, niin tutustu{' '}
-					<a href="https://www.jarmonportfolio.fi/">portfoliooni</a>
+					Mikäli taas etsit työntekijää, front-end react junior koodaria, niin tutustu
+					<a href="https://www.jarmonportfolio.fi/"> portfoliooni.</a>
 				</p>
 			</div>
 			<div className={styles.picture_box}>

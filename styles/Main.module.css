@@ -28,6 +28,11 @@ box-shadow: inset 12px 12px 24px #c4d0d7,
 .text span a{
     color: var(--second-red);
     margin-bottom: 1rem;
+    text-decoration: none;
+}
+.text span a,
+.text a {
+    font-weight: 700;
 }
 .picture_box {
     display: none;

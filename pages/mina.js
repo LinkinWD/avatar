@@ -25,22 +25,23 @@ const Mina = () => {
 				<article className={`${styles.article} ${turning ? styles.turn : ''}`}>
 					<div className={styles.front_text}>
 						<p>
-							Jo kypsään ikään kasvanut miehen kloppi: Mies joka nuorena haaveili joko olevansa kokki tai
+							Jo kypsään ikään kasvanut miehen kloppi. Mies joka nuorena haaveili joko olevansa kokki tai
 							ohjelmoija. Vanhemmilla oli toiset suunnitelmat, joten nuoruus tuli eletyä ja vanhemmiten
 							opiskeltua useita kokkitutkinto ja työskennelty sellaisena. Kolme vuotta sitten astui
-							kuvioon koira vauvveli, ensimmäinen lapseni, joka tarvitsi myös huomiotani. Ikääkin oli jo
+							kuvioon koira vauveli. Ensimmäinen lapseni, joka tarvitsi myös huomiotani. Ikääkin oli jo
 							aikuisen verran ja ajattelin, vaihtaa fyysisesti kevyempään ammattiin ja seurata toista
-							nuoruuden haavettani kohde.
+							nuoruuteni haavetta.
 						</p>
 						<Button text={'käännä'} funct={'side'} />
 					</div>
 					<div className={styles.back_text}>
 						<p>
 							Oli helppoa opiskella, kun tiesi vastauksen kysymykseen &quot;Mitä sinusta tulee
-							isona?&quot;, jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee. Suuntais oli
+							isona?&quot; jo mennessä kouluun ja pystyi keskittymään siihen mikä merkitsee. Suuntaus oli
 							Front-end kehittäjä ja siihen liittyvät sivu hommelit. Koodaus, suunnittelu,
-							kuvamanipulaatiot. Siitä sitten suunnataan full-stack kehittäjäksi tulevaisuudessa.
+							kuvamanipulaatiot.
 						</p>
+						<p>Siitä sitten suunnataan full-stack kehittäjäksi tulevaisuudessa.</p>
 						<Button text={'käännä'} funct={'side'} />
 					</div>
 				</article>
