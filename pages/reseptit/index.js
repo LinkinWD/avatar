@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { createClient } from 'contentful';
-import RecipeCard from '../../components/RecipeCard';
+
 import Head from 'next/head';
 import Image from 'next/image';
+
+import RecipeCard from '../../components/RecipeCard';
+import { ValidateEmail } from '../../utils/validate';
+
 import styles from '../../styles/Reseptit.module.css';
 
 //yhdistetään contentful ja haetaan reseptit array
@@ -23,8 +27,15 @@ export async function getStaticProps() {
 }
 
 const Reseptit = ({ reseptit }) => {
-	const [ inputValue, setInputValue ] = useState();
 	const [ message, setMessage ] = useState(false);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const data = new FormData(e.target);
+		const email = Object.fromEntries(data.entries());
+		ValidateEmail(email);
+		setMessage(true);
+	};
 
 	return (
 		<section className={styles.blog}>
@@ -65,21 +76,13 @@ const Reseptit = ({ reseptit }) => {
 					sähköposti osoitteesi
 				</p>
 				{!message && (
-					<form>
+					<form onSubmit={handleSubmit}>
 						<p>
-							<label htmlFor="email">Sähköpostiosoite:</label>
-							<input
-								type="email"
-								required
-								name="email"
-								id="email"
-								onChange={(e) => setInputValue(e.target.value)}
-							/>
+							<label htmlFor="email">Sähköposti osoite:</label>
+							<input type="email" required name="email" id="email" />
 						</p>
 
-						<button type="submit" onClick={() => setMessage(true)}>
-							lähetä
-						</button>
+						<button type="submit">lähetä</button>
 					</form>
 				)}
 				{message && <p className={styles.thank_you}>Kiitos tilauksesta.</p>}

@@ -18,7 +18,7 @@ export default function Navbar() {
        <NavLinks/>
       </div>
       <div className={`${styles.btn_div} ${isSidebarOpen ? styles.active: styles.no_active}`}>
-        <button className={styles.hamburger} ><Image  onClick={toggleSidebar} src="/img/hamburger.svg" height={40} width={40} alt='hamburger icon'/>
+        <button className={styles.hamburger} type='button'><Image  onClick={toggleSidebar} src="/img/hamburger.svg" height={40} width={40} alt='hamburger icon'/>
         </button>
       </div>
     </nav>
