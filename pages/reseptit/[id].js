@@ -2,7 +2,7 @@ import { createClient } from 'contentful';
 import Link from 'next/link';
 import Head from 'next/head';
 //componentit
-
+import Loading from '../../components/Loading';
 import Recipe from '../../components/Recipe';
 
 const client = createClient({
