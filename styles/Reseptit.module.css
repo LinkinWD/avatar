@@ -52,6 +52,43 @@
     
     width: 100%;
 }
+.news_letter {
+    width: 80%;
+    margin: auto;
+}
+.news_letter p {
+    margin: 1rem 0;
+    text-align: center;
+}
+.news_letter p input {
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.news_letter p input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--main-red) ;
+}
+.news_letter form {
+    width: 100%;
+    
+    text-align: center;
+}
+.news_letter form button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    width: 80%;
+    background-color: var(--main-red);
+    color: white;
+    font-weight: 700;
+    border-radius: 12px; 
+}
+.thank_you {
+    color: var(--main-green);
+    font-weight: 700;
+}
 
 @media only screen and (min-width: 600px) {
     .text_div {
@@ -66,6 +103,12 @@
     .recipe_area  ul{
         width: 60%;
     }
+    .news_letter p label {
+        margin-right: 1rem;
+    }
+    .news_letter form button {
+        width: 60%;
+    }
 }
 @media only screen and (min-width: 1000px) {
     .article {
@@ -74,6 +117,15 @@
     } 
     .image_div {
         margin-left: 0;
+    }
+    .news_letter {
+        width: 60%;
+    }
+    .news_letter p label {
+        margin-right: 2rem;
+    }
+    .news_letter form button {
+        width: 40%;
     }
 }
 @media only screen and (min-width: 1500px) {

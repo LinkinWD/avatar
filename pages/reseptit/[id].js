@@ -1,7 +1,9 @@
 import { createClient } from 'contentful';
-import Recipe from '../../components/Recipe';
-import Loading from '../../components/Loading';
+import Link from 'next/link';
 import Head from 'next/head';
+//componentit
+
+import Recipe from '../../components/Recipe';
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE,

@@ -6,7 +6,7 @@ const Button = ({ text, funct }) => {
 	const { side } = useGlobalContext();
 
 	return (
-		<button onClick={funct === 'none' ? '' : side} className={styles.btn}>
+		<button onClick={funct === 'none' ? null : side} className={styles.btn}>
 			{text}
 		</button>
 	);

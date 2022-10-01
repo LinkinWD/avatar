@@ -58,7 +58,7 @@ const Reseptit = ({ reseptit }) => {
 					<Image src="/img/ruokakori.jpg" height={500} width={500} alt="Ruokakori" />
 				</div>
 			</article>
-			<section>
+			<section className={styles.news_letter}>
 				<p>
 					Uusia reseptejä tulee noin kaksi kuukaudessa. Mikäli haluat ilmoituksen, kun uusi saapuu, jätä
 					sähköposti osoitteesi
@@ -81,7 +81,7 @@ const Reseptit = ({ reseptit }) => {
 						</button>
 					</form>
 				)}
-				{message && <p>Kiitos tilauksesta.</p>}
+				{message && <p className={styles.thank_you}>Kiitos tilauksesta.</p>}
 			</section>
 
 			<div className={styles.recipe_div}>

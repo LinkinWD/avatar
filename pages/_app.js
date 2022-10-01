@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 			<AppProvider>
 				<Layout>
 					<Component {...pageProps} />
-					<Script src="https://www.google.com/recaptcha/api.js" />
+					<Script src="https://www.google.com/recaptcha/api.js" async defer />
 				</Layout>
 			</AppProvider>
 		</FormspreeProvider>

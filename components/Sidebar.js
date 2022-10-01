@@ -11,7 +11,7 @@ const Sidebar = () => {
 		<section>
 			<div className={`${styles.sidebar_area} ${isSidebarOpen ? styles.open : ''}`}>
 				<div className={styles.header}>
-					<p>Navigaation</p>
+					<p>Navigaatio</p>
 				</div>
 				<NavLinks />
 			</div>
