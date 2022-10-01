@@ -16,7 +16,10 @@ export async function getStaticProps() {
 		accessToken: process.env.CONTENTFUL_ACCESS_KEY
 	});
 
-	const res = await client.getEntries({ content_type: 'resepti' });
+	const res = await client.getEntries({
+		content_type: 'resepti',
+		order: 'fields.title'
+	});
 
 	return {
 		props: {
@@ -28,13 +31,20 @@ export async function getStaticProps() {
 
 const Reseptit = ({ reseptit }) => {
 	const [ message, setMessage ] = useState(false);
-
+	const [ error, setError ] = useState('');
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const data = new FormData(e.target);
 		const email = Object.fromEntries(data.entries());
-		ValidateEmail(email);
-		setMessage(true);
+		let result = ValidateEmail(email);
+		if (result === false) {
+			setError('Olet laittanut hassun sähköposti osoitteen');
+			return false;
+		} else if (result === true) {
+			setError('');
+			setMessage(true);
+			console.log(email);
+		}
 	};
 
 	return (
@@ -86,6 +96,7 @@ const Reseptit = ({ reseptit }) => {
 					</form>
 				)}
 				{message && <p className={styles.thank_you}>Kiitos tilauksesta.</p>}
+				<p className={styles.error}>{error}</p>
 			</section>
 
 			<div className={styles.recipe_div}>

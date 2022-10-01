@@ -4,8 +4,6 @@ export const ValidateEmail = (data) => {
 	if (email.match(mailFormat)) {
 		return true;
 	} else {
-		alert('You have entered an invalid email address!');
-
 		return false;
 	}
 };
