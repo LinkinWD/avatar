@@ -84,6 +84,7 @@
     color: white;
     font-weight: 700;
     border-radius: 12px; 
+    cursor: pointer;
 }
 .thank_you {
     color: var(--main-green);
