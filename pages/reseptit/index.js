@@ -48,11 +48,7 @@ const Reseptit = ({ reseptit }) => {
 			return false;
 		} else if (result === true) {
 			try {
-				await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}api/email`, email, {
-					headers: {
-						'Content-Type': 'application/json'
-					}
-				});
+				await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}api/email`, email);
 
 				setError('');
 				setMessage(true);
