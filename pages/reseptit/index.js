@@ -47,13 +47,18 @@ const Reseptit = ({ reseptit }) => {
 			setError('Olet laittanut hassun sähköposti osoitteen');
 			return false;
 		} else if (result === true) {
-			setError('');
-			setMessage(true);
 			try {
-				const res = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/email`, email);
-				console.log(res);
+				await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/email`, email, {
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				});
+
+				setError('');
+				setMessage(true);
 			} catch (error) {
 				console.log(error);
+				setError(error);
 			}
 		}
 	};
