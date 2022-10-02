@@ -44,16 +44,14 @@ const Reseptit = ({ reseptit }) => {
 			return false;
 		} else if (result === true) {
 			try {
-				const res = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/email`, email);
-
-				setError('');
-				setMessage(true);
+				await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/email`, email);
 			} catch (error) {
 				console.log(error);
 			}
+			setError('');
+			setMessage(true);
 		}
 	};
-
 	return (
 		<section className={styles.blog}>
 			<Head>
