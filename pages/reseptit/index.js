@@ -44,16 +44,11 @@ const Reseptit = ({ reseptit }) => {
 			return false;
 		} else if (result === true) {
 			try {
-				const res = await axios.post(
-					`${process.env.NEXT_PUBLIC_SERVER_URL}
-				api/email`,
-					email,
-					{
-						headers: {
-							'Content-Type': 'application/json'
-						}
+				const res = await axios.post('https://www.linkinwd.fi/api/email', email, {
+					headers: {
+						'Content-Type': 'application/json'
 					}
-				);
+				});
 
 				setError('');
 				setMessage(true);
