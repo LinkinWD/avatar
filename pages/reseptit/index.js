@@ -8,6 +8,7 @@ import RecipeCard from '../../components/RecipeCard';
 import { ValidateEmail } from '../../utils/validate';
 
 import styles from '../../styles/Reseptit.module.css';
+import axios from 'axios';
 
 //yhdistetään contentful ja haetaan reseptit array
 export async function getStaticProps() {
@@ -29,10 +30,15 @@ export async function getStaticProps() {
 	};
 }
 
+export async function newEmail(email) {
+	axios.post();
+}
+
 const Reseptit = ({ reseptit }) => {
 	const [ message, setMessage ] = useState(false);
 	const [ error, setError ] = useState('');
-	const handleSubmit = (e) => {
+
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const data = new FormData(e.target);
 		const email = Object.fromEntries(data.entries());
@@ -43,7 +49,12 @@ const Reseptit = ({ reseptit }) => {
 		} else if (result === true) {
 			setError('');
 			setMessage(true);
-			console.log(email);
+			try {
+				const res = await axios.post('/api/email', email);
+				console.log(res);
+			} catch (error) {
+				console.log(error);
+			}
 		}
 	};
 
