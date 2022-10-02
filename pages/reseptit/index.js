@@ -18,8 +18,7 @@ export async function getStaticProps() {
 	});
 
 	const res = await client.getEntries({
-		content_type: 'resepti',
-		order: 'fields.title'
+		content_type: 'resepti'
 	});
 
 	return {
@@ -79,7 +78,11 @@ const Reseptit = ({ reseptit }) => {
 						Tarkkoja raseptejä on netti pullollaan, täältä etsitään visioita ja innostusta ikuiseen
 						kysymykseen. <span>Mitä tänään syötäisiin?</span>
 					</p>
-					<p>Mikäli reseptin nimen perässä on (-v) niin siitä on helppo tehdä vegaanin versio</p>
+					<br />
+					<p>
+						Reseptit on järjestetty ikäjärjestyksessä ja mikäli reseptin nimen perässä on (-v) niin siitä on
+						helppo tehdä vegaanin versio
+					</p>
 				</div>
 				<div className={styles.image_div}>
 					<Image src="/img/ruokakori.jpg" height={500} width={500} alt="Ruokakori" />
