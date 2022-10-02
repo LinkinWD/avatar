@@ -30,10 +30,6 @@ export async function getStaticProps() {
 	};
 }
 
-export async function newEmail(email) {
-	axios.post();
-}
-
 const Reseptit = ({ reseptit }) => {
 	const [ message, setMessage ] = useState(false);
 	const [ error, setError ] = useState('');
@@ -48,13 +44,12 @@ const Reseptit = ({ reseptit }) => {
 			return false;
 		} else if (result === true) {
 			try {
-				await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}api/email`, email);
+				const res = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}api/email`, email);
 
 				setError('');
 				setMessage(true);
 			} catch (error) {
 				console.log(error);
-				setError(error);
 			}
 		}
 	};
