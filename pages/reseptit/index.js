@@ -44,7 +44,11 @@ const Reseptit = ({ reseptit }) => {
 			return false;
 		} else if (result === true) {
 			try {
-				const res = await axios.post(`/api/email`, email);
+				const res = await axios.post(`/api/email`, email, {
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				});
 
 				setError('');
 				setMessage(true);
