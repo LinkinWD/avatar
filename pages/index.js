@@ -9,6 +9,7 @@ export default function Home() {
 				<title>LinkinWD</title>
 				<meta name="description" content="Freelancer frontend kehittäjä." />
 				<meta name="author" content="Jarmo Lindströn" />
+				<meta property="og:image" content="/piirrosoma.png" />
 				<meta
 					name="keywords"
 					content="HTML, CSS, JavaScript, nextjs, react, front-end, frontend, ui desing, käyttöliittymä suunnittelu, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström, linkin web designs, freelacer for hire, ohjelmistokehittäjä etsii työtä, katinala, hattula"
