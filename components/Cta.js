@@ -16,7 +16,7 @@ const Cta = () => {
 			if (luku === 5) {
 				luku = 0;
 			}
-		}, 1500);
+		}, 1000);
 		return () => clearInterval(ajastin);
 	}, []);
 
