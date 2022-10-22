@@ -88,7 +88,7 @@ const Reseptit = ({ reseptit }) => {
 					<br />
 					<p>
 						Kaikki on tekojärjestyksessä, vanhimmasta alkaen ja mikäli reseptin nimen perässä on (-v) niin
-						siitä on helppo tehdä vegaanin versio
+						siitä on helppo tehdä vegaanin versio. Hakusanalla -v löydät nämä kaikki.
 					</p>
 				</div>
 				<div className={styles.image_div}>
