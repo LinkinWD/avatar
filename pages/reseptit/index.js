@@ -33,6 +33,7 @@ export async function getStaticProps() {
 const Reseptit = ({ reseptit }) => {
 	const [ message, setMessage ] = useState(false);
 	const [ error, setError ] = useState('');
+	const [ query, setQuery ] = useState('');
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -52,6 +53,11 @@ const Reseptit = ({ reseptit }) => {
 			setMessage(true);
 		}
 	};
+
+	const filteredRecipes = reseptit.filter((resepti) => {
+		return resepti.fields.title.toLowerCase().includes(query.toLowerCase());
+	});
+
 	return (
 		<section className={styles.blog}>
 			<Head>
@@ -110,9 +116,17 @@ const Reseptit = ({ reseptit }) => {
 
 			<div className={styles.recipe_div}>
 				<h3>Reseptit</h3>
+				<br />
+				<form className={styles.search}>
+					<p>
+						Hae
+						<input value={query} onChange={(e) => setQuery(e.target.value)} type="text" />
+					</p>
+				</form>
+
 				<div className={styles.recipe_area}>
 					<ul>
-						{reseptit.map((resepti) => {
+						{filteredRecipes.map((resepti) => {
 							const { title, id, donePicture } = resepti.fields;
 							return <RecipeCard id={id} title={title} donePicture={donePicture} key={id} />;
 						})}

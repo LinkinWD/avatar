@@ -60,6 +60,7 @@
     margin: 1rem 0;
     text-align: center;
 }
+.search input,
 .news_letter p input {
     font-size: 1.3rem;
     padding: 5px;
@@ -95,6 +96,8 @@
     font-size: 700;
     margin: auto;
 }
+
+
 
 @media only screen and (min-width: 600px) {
     .text_div {
