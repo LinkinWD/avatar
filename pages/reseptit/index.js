@@ -61,7 +61,7 @@ const Reseptit = ({ reseptit }) => {
 	return (
 		<section className={styles.blog}>
 			<Head>
-				<title>Pula-aika Blogi</title>
+				<title>Ruoka-aika Blogi</title>
 				<meta name="description" content=" Ruokaideoita ja toteutusta halvalla" />
 				<meta name="author" content="Jarmo Lindströn" />
 				<meta
@@ -73,8 +73,8 @@ const Reseptit = ({ reseptit }) => {
 			<article className={styles.article}>
 				<div className={styles.text_div}>
 					<p>
-						Tervetuloa pula-ajan ruokalaan. Ei nyt suoranaisesti, mutta täällä tehdään pienellä budjetilla
-						erilaisia ruokaratkaisuja ja yritään löytään arjen säästöjä.
+						Tervetuloa halpis ruokalaan. Täällä tehdään pienellä budjetilla erilaisia ruokaratkaisuja ja
+						yritään löytään arjen säästöjä.
 					</p>
 					<p>
 						Kaikki reseptit ovet suuntaa antavia ja niitä ei olekkaan tehty orjallisesti noudatettavaksi,

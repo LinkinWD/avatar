@@ -25,7 +25,7 @@ const NavLinks = () => {
 			</li>
 			<li className={styles.li} onClick={closeSidebar}>
 				<Link href="/reseptit">
-					<a>pula-aika blogi</a>
+					<a>Ruoka-aika blogi</a>
 				</Link>
 			</li>
 
