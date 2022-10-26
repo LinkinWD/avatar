@@ -69,7 +69,7 @@ const Reseptit = ({ reseptit }) => {
 					content="ruoka, halpa, pula-aika, resepti, ohjelmistokehittöjä, hämeenlinna, linkinwd, jarmo lindström"
 				/>
 			</Head>
-			<h2 className={styles.header}>Pula-aika blogi</h2>
+			<h2 className={styles.header}>Ruoka-aika blogi</h2>
 			<article className={styles.article}>
 				<div className={styles.text_div}>
 					<p>
